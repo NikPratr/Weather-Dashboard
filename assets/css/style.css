@@ -1,0 +1,133 @@
+:root {
+    --blue1: #00b8ff;
+    --blue2: #009bd6;
+    --blue3: #00719c;
+    --blue4: #00415a;
+    --blue5: #001f2b;
+}
+
+body{
+    margin: 0px;
+}
+
+
+/* ------------------------------------
+    Generics
+   ------------------------------------ 
+*/
+
+
+.container1 {
+    background: var(--blue1)
+}
+
+.container2 {
+    background: var(--blue2)
+}
+
+.container3 {
+    border-radius: 10px;
+    background: var(--blue3)
+}
+
+.container4 {
+    color: white;
+    background: var(--blue4)
+}
+
+.container5 {
+    color: white;
+    background: var(--blue5)
+}
+
+/* ------------------------------------
+    Header
+   ------------------------------------ 
+*/
+
+header{
+    text-align: center;
+    margin-bottom: 10px;
+    height: 75px;
+    background-color: var(--blue5);
+    color: white;
+}
+
+header h1 {
+    margin: 0px;
+    font-size: 35px;
+    padding-top: 15px;
+}
+
+/* ------------------------------------
+    Search Display
+   ------------------------------------ 
+*/
+
+#search-display {
+    margin-left: 2%;
+    display: inline-flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+#search-display h2 {
+    margin-bottom: 2%;
+    text-indent: 2.5%;
+}
+
+#searchbar {
+    align-self: center;
+    width: 95%;
+    height: 30px;
+    margin-bottom: 10px;
+
+    border-radius: 5px;
+    border-style: solid;
+    border-color: var(--blue4);
+}
+
+#submit-button {
+    font-weight: bold;
+    align-self: center;
+    width: 95%;
+    height: 30px;
+    margin-bottom: 10px;
+    color: var(--blue4);
+    background-color: var(--blue2);
+
+    border-radius: 5px;
+    border-style: none;
+}
+
+#submit-button:hover{
+    cursor: pointer;
+}
+
+#search-history {
+    align-self: center;
+    width: 95%;
+    height: 400px;
+
+    border-top-style: solid;
+    border-top-color: black;
+}
+
+/* ------------------------------------
+    Weather Forcast
+   ------------------------------------ 
+*/
+
+#weather-forcast {
+    width: 58%;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+#current-weather {
+    display: none;
+    border-style: solid;
+    border-width: 1px;
+}
