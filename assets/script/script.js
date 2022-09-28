@@ -27,7 +27,7 @@ var submitButton = document.querySelector("#submit-button");
 // }
 
 var city = "Dayton";
-var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey;
+var queryURL = "http://api.openweathermap.org/data/2.5/weather?units=imperial&q=" + city + "&appid=" + APIKey;
 
 fetch(queryURL)
 .then(function (response) {
@@ -37,8 +37,7 @@ fetch(queryURL)
     console.log(data);
     cityName.textContent = data.name;
     console.log(data.main.temp);
-    var convertedTemp = ((data.main.temp-273.15)*1.8)+32;
-    cityTemp.textContent = "Temperature: " + convertedTemp + "°F";
+    cityTemp.textContent = "Temperature: " + data.main.temp + "°F";
     // cityTemp.textContent = data.main[0];
 });
 
